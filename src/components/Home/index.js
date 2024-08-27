@@ -5,8 +5,19 @@ import './index.css'
 
 const Home = () => {
   const [passwordList, setPasswordList] = useState([])
+  const [search, setSearch] = useState('')
+  const onWebSearch = searchEvent => {
+    setSearch(searchEvent)
+  }
+  const searchWeb = passwordList.filter(eachList =>
+    eachList.website.toLowerCase().includes(search),
+  )
   const onAddUserPasswordList = updatedPasswordList => {
     setPasswordList([...passwordList, updatedPasswordList])
+  }
+  const onDeleteWebsite = id => {
+    const deleteWeb = passwordList.filter(eachList => eachList.id !== id)
+    setPasswordList(deleteWeb)
   }
 
   return (
@@ -20,7 +31,11 @@ const Home = () => {
           />
         </div>
         <AddPass userPasswordList={onAddUserPasswordList} />
-        <YourPass passwordList={passwordList} />
+        <YourPass
+          passwordList={searchWeb}
+          onSearch={onWebSearch}
+          deleteWeb={onDeleteWebsite}
+        />
       </div>
     </div>
   )

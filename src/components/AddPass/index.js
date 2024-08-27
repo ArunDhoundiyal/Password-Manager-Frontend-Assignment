@@ -39,11 +39,13 @@ const AddPass = ({userPasswordList}) => {
       >
         <p className="password-title">Add New Password</p>
         <div className="input-container">
-          <img
-            src="https://assets.ccbp.in/frontend/react-js/password-manager-website-img.png"
-            alt="website"
-            className="input-logo"
-          />
+          <div className="img-logo-input-container">
+            <img
+              src="https://assets.ccbp.in/frontend/react-js/password-manager-website-img.png"
+              alt="website"
+              className="input-logo"
+            />
+          </div>
           <input
             className="input-style"
             type="text"
@@ -55,11 +57,13 @@ const AddPass = ({userPasswordList}) => {
           />
         </div>
         <div className="input-container">
-          <img
-            src="https://assets.ccbp.in/frontend/react-js/password-manager-username-img.png"
-            alt="website"
-            className="input-logo"
-          />
+          <div className="img-logo-input-container">
+            <img
+              src="https://assets.ccbp.in/frontend/react-js/password-manager-username-img.png"
+              alt="website"
+              className="input-logo"
+            />
+          </div>
           <input
             type="text"
             className="input-style"
@@ -71,11 +75,13 @@ const AddPass = ({userPasswordList}) => {
           />
         </div>
         <div className="input-container">
-          <img
-            src="https://assets.ccbp.in/frontend/react-js/password-manager-password-img.png"
-            alt="website"
-            className="input-logo"
-          />
+          <div className="img-logo-input-container">
+            <img
+              src="https://assets.ccbp.in/frontend/react-js/password-manager-password-img.png"
+              alt="website"
+              className="input-logo"
+            />
+          </div>
           <input
             type="password"
             className="input-style"

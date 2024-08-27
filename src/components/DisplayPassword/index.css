@@ -1,3 +1,35 @@
 .password-card {
   border: solid 1px #ffffff;
+  width: 250px;
+  border-radius: 5px;
+  margin: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+}
+.list-content-container {
+  color: #ffffff;
+  font-size: 12px;
+}
+
+.numberCircle {
+  height: 40px;
+  width: 40px;
+  background-color: #0ea5e9;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  border-radius: 40px;
+  align-self: center;
+  font-size: 20px;
+}
+.delete-icon {
+  height: 30px;
+}
+.delete-button {
+  background-color: transparent;
+  border: solid 0px;
 }

@@ -5,7 +5,18 @@
   padding: 25px;
   padding-left: 35px;
   padding-right: 35px;
+  overflow: auto;
 }
+
+.count {
+  border: solid 1px #ffffff;
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-radius: 18px;
+}
+
 .password-title {
   color: #ffffff;
   font-weight: 400;
@@ -14,31 +25,34 @@
 .yourPass-container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
   border-bottom: solid 1px #ffffff;
   height: 50px;
 }
-.input-search {
-  height: 30px;
-  border: 0px;
-  outline: none;
-}
-
-.search-pass-container {
+.input-enter-container {
   display: flex;
-  height: 32px;
-  align-items: center;
+  border: solid 1px #ffffff;
+  height: 31px;
+  width: 250px;
+}
+.search-logo-container {
+  display: flex;
+  justify-content: center;
+  border-right: solid 1px darkgrey;
+  width: 30px;
+  height: 30px;
   background-color: #ffffff;
 }
-
-.search-box-container {
-  height: 30px;
+.input-search-logo {
+  height: 20px;
+  align-self: center;
 }
-
-.search-logo {
-  height: 30px;
+.style-input {
+  border: solid 0px;
+  outline: none;
+  width: 100%;
 }
-
 .checkbox-container {
   display: flex;
   justify-content: flex-end;
@@ -61,4 +75,5 @@
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
 }
